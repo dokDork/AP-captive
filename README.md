@@ -16,41 +16,27 @@ sudo ./AP-captive.sh TryHackMe wlan0 wlan1 wlan2 --nm-stop
  ``` 
 <img src="https://github.com/dokDork/AP-captive/raw/main/images/command.jpg">
 
-select one of the penetration test PHASES you are interested in:
-<img src="https://github.com/dokDork/red-team-penetration-test-script/raw/main/images/02.png">
-
-Once selected the PHASE, scripts will be generated using tmux as terminal.
-At this point you can select a specific SUB-PHASE using tmux commands:  
-**(CTRL + b) w**  
-<img src="https://github.com/dokDork/red-team-penetration-test-script/raw/main/images/03.png">
-
-once the SUB-PHASE has been selected you will be able to view the commands that have been pre-compiled to analyse the SUB-PHASE. At this point it is possible to selecet and execute a specific command just pressing ENTER:
-<img src="https://github.com/dokDork/red-team-penetration-test-script/raw/main/images/04.png">
-
-When you need to change penetration test PHASE and return to main manu, you need to close the tmux session. To implement this action you need to use the tmux shortcut:  
-**(CTRL + b) :kill-session**  
-or, if you configure tmux as reported in the Installation section, you can use the shortcut:
-**(CTRL + b) (CTRL + n)**  
-
-<img src="https://github.com/dokDork/red-team-penetration-test-script/raw/main/images/05.png">
+Any passwords will be saved in the file **/tmp/captive_portal/passwords.txt**
 
   
 ## Command-line parameters
 ```
-./siteSniper.sh <interface> <target url>
+sudo ./AP-captive.sh TryHackMe wlan0 wlan1 wlan2 --nm-stop
 ```
 
 | Parameter | Description                          | Example       |
 |-----------|--------------------------------------|---------------|
-| `interface`      | network interface through which the target is reached | `eth0`, `wlan0`, `tun0`, ... |
-| `target url`      | Target URL you need to test          | `http://www.example.com`          |
+| `ESSID`      | ESSID of the Access Point to be created | `TryHackMe`, `myAP`, ... |
+| `wlan0`      | internet-connected interface         | `wlan0`,`eth0`           |
+| `wlan1`      | interface that activates the access point         | `wlan1`          |
+| `wlan2`      | interface that in monitor mode performs deauthentication attacks on Access Points that have the same ESSID activated by the script         | `wlan2`          |
 
   
 ## How to install it on Kali Linux (or Debian distribution)
 It's very simple  
 ```
 cd /opt
-sudo git clone https://github.com/dokDork/SiteSniper.git
+sudo git clone https://github.com/AP-captive/SiteSniper.git
 cd SiteSniper 
 chmod 755 siteSniper.sh 
 ./siteSniper.sh 
