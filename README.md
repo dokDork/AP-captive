@@ -36,13 +36,8 @@ sudo ./AP-captive.sh TryHackMe wlan0 wlan1 wlan2 --nm-stop
 It's very simple  
 ```
 cd /opt
-sudo git clone https://github.com/AP-captive/SiteSniper.git
-cd SiteSniper 
-chmod 755 siteSniper.sh 
-./siteSniper.sh 
+sudo git clone https://github.com/dokDork/AP-captive.git
+cd AP-captive 
+chmod 755 AP-captive.sh 
+./AP-captive.sh 
 ```
-Optional: You can insert a shortcut to move faster through the tool.
-```
-echo "bind-key C-n run-shell \"tmux kill-session -t #{session_name}\"" >> ~/.tmux.conf
-```
-
