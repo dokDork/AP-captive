@@ -12,9 +12,9 @@ AP-captive creates a passwordless access point that can be connected to. Connect
   
 ## Example Usage
  ```
-./siteSniper.sh eth0 https://www.example.com
+sudo ./AP-captive.sh TryHackMe wlan0 wlan1 wlan2 --nm-stop
  ``` 
-<img src="https://github.com/dokDork/red-team-penetration-test-script/raw/main/images/01.png">
+<img src="https://github.com/dokDork/AP-captive/raw/main/images/command.jpg">
 
 select one of the penetration test PHASES you are interested in:
 <img src="https://github.com/dokDork/red-team-penetration-test-script/raw/main/images/02.png">
