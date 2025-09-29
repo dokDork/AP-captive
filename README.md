@@ -1,7 +1,7 @@
 # AP-captive
 [![License](https://img.shields.io/badge/license-MIT-_red.svg)](https://opensource.org/licenses/MIT)  
 AP-captive creates a passwordless access point that can be connected to. Connecting users are still prompted to enter a password, which is saved by the access point.
-<img src="https://github.com/dokDork/AP-captive/raw/main/images/ap-captive.png" width="250" height="250">  
+<img src="https://github.com/dokDork/AP-captive/raw/main/images/captive.png" width="250" height="250">  
 
 ## Description
 **AP-captive** AP-captive is activated on a PC (e.g., a Kali Linux) that uses three antennas to operate:
