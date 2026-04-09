@@ -4,6 +4,12 @@ AP-captive creates a passwordless access point that can be connected to. Connect
 
 <img src="https://github.com/dokDork/AP-captive/raw/main/images/captive.png" width="250">  
 
+## Disclaimer
+This tool is provided for authorized security testing, research, and educational purposes only.
+If you use this tool for any activity involving attacks, exploitation, or security testing against individuals, companies, systems, or networks, you must have explicit prior authorization from the relevant person, organization, or asset owner.
+
+Unauthorized use is strictly prohibited. The author assumes no responsibility for any misuse or damage caused by this tool.
+
 ## Description
 **AP-captive** AP-captive is activated on a PC (e.g., a Kali Linux) that uses three antennas to operate:
 - antenna0 (e.g., wlan0): Used to connect Kali Linux to the Internet;
