@@ -48,3 +48,5 @@ cd AP-captive
 chmod 755 AP-captive.sh 
 ./AP-captive.sh 
 ```
+---
+Author: Luigi Capuzzello (dokDork) · [Website](https://capuzzello.altervista.org/) · [LinkedIn](https://www.linkedin.com/in/luigi-capuzzello/)
